@@ -1,0 +1,15 @@
+---
+
+- name: Install Codecs
+  dnf:
+    pkg:
+      - gstreamer1-plugins-base
+      - gstreamer1-plugins-good
+      - gstreamer1-plugins-bad-free
+      - gstreamer1-plugins-bad-free-extras
+      - gstreamer1-plugins-good-extras
+      - gstreamer1-plugins-ugly-free
+      - libdvdread
+      - libdvdnav
+      - lsdvd
+    state: present

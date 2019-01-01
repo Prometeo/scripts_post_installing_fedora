@@ -1,0 +1,11 @@
+- import_tasks: install.yml
+  tags:
+    - emacs
+    - vim
+    - editors
+
+- import_tasks: config.yml
+  tags:
+    - js-beautify
+    - editors
+    - emacs

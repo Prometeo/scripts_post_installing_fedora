@@ -1,0 +1,6 @@
+- name: Install editors
+  dnf:
+    pkg:
+      - vim
+      - emacs
+    state: present

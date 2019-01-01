@@ -1,0 +1,5 @@
+- name: Install Node and Npm
+  dnf:
+    pkg:
+      - nodejs
+    state: present

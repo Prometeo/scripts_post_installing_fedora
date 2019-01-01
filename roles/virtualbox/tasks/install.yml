@@ -1,0 +1,11 @@
+- name: Add VirtualBox repo
+  command: wget -c -P/etc/yum.repos.d/ http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
+- name: Edit VirtualBox Repo
+  lineinfile:
+    line: skip_if_unavailable=1
+    dest: /etc/yum.repos.d/virtualbox.repo
+- name: Install VirtualBox
+  dnf:
+    pkg:
+      - VirtualBox-6.0
+    state: present

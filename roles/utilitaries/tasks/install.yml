@@ -1,0 +1,16 @@
+---
+
+- name: Install Utilitaries
+  dnf:
+    pkg:
+      - unrar
+      - p7zip
+      - p7zip-plugins
+      - gimp
+      - http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
+      - transmission
+      - vlc
+      - fedora-workstation-repositories
+      - steam
+      - util-linux-user
+    state: present

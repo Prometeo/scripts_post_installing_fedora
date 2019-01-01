@@ -1,0 +1,20 @@
+---
+
+- name: Install Basic OS Packages
+  dnf:
+    pkg:
+      - htop
+      - tmux
+      - gnome-music
+      - curl
+      - wget
+      - links
+      - gcc-c++
+      - gcc
+      - make
+      - kernel-headers
+      - kernel-devel
+      - dkms
+      - "@Development Tools"
+      - "@Development Libraries"
+    state: present

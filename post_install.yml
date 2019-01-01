@@ -1,0 +1,16 @@
+- hosts: localhost
+  vars:
+    home_path: /path/to/home
+    local_user: user
+  become: true
+  roles:
+    - role: update
+    - role: basic
+    - role: codecs
+    - role: utilitaries
+    - role: python
+    - role: node
+    - role: terminal
+    - role: docker
+    - role: editors
+    - role: virtualbox

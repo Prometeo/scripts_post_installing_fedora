@@ -1,0 +1,10 @@
+- import_tasks: install.yml
+  tags:
+    - terminal
+    - tmux
+    - zsh
+
+- import_tasks: config.yml
+  tags:
+    - terminal
+    - zsh

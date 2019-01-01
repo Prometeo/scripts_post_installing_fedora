@@ -1,0 +1,14 @@
+---
+
+- name: Add user to docker group
+  user:
+    name: "{{ local_user }}"
+    group: docker
+- name: Start docker daemon
+  service:
+    name: docker
+    state: started
+- name: Enable docker daemon
+  service:
+    name: docker
+    enabled: yes

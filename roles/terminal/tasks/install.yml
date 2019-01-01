@@ -1,0 +1,14 @@
+---
+
+- name: Install Utilitaries for Terminal
+  dnf:
+    pkg:
+      - tmux
+      - zsh
+    state: present
+- name: Installing powerline-fonts
+  dnf:
+    pkg:
+      - powerline
+      - powerline-fonts
+      - tmux-powerline

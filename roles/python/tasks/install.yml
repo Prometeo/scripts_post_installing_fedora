@@ -1,0 +1,8 @@
+- name: Install Packages for python
+  dnf:
+    pkg:
+      - python3-pip
+      - python3-virtualenv
+      - python-imaging
+      - python-devel
+    state: present
