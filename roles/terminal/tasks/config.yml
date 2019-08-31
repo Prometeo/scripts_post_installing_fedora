@@ -16,10 +16,10 @@
 #     dest: "{{ home_path }}/.tmux"
 #     create: yes
 
-- name: Configure dotfiles
+- name: Clone dotfiles
   become: false
   git:
-    repo: git@github.com:Prometeo/dotfiles.git
+    repo: https://github.com/Prometeo/dotfiles.git
     version: master
     dest: "{{ home_path }}/dotfiles"
     accept_hostkey: yes

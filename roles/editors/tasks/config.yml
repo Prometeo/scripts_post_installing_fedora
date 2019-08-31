@@ -1,8 +1,9 @@
 ---
 
-- name: Add jsbeautify
-  command: wget -O /home/prometeo/.jsbeautifyrc https://raw.githubusercontent.com/Prometeo/dotfiles/master/jsbeautifyrc
-  become: false
+# - name: Add jsbeautify
+#   command: wget -O /home/prometeo/.jsbeautifyrc https://raw.githubusercontent.com/Prometeo/dotfiles/master/jsbeautifyrc
+#   become: false
+
 - name: Configure Emacs
   become: false
   git:
