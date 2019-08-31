@@ -7,7 +7,7 @@
 - name: Configure Emacs
   become: false
   git:
-    repo: git@github.com:Prometeo/my_emacs_config.git
+    repo: https://github.com/Prometeo/my_emacs_config.git
     version: master
     dest: "{{ home_path }}/.emacs.d"
     accept_hostkey: yes
