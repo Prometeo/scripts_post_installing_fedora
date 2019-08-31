@@ -1,7 +1,7 @@
 - hosts: localhost
   vars:
-    home_path: /path/to/home
-    local_user: user
+    home_path: /home/prometeo
+    local_user: prometeo
   become: true
   roles:
     - role: update
