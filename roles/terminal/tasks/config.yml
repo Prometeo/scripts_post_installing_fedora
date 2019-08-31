@@ -1,20 +1,20 @@
 ---
-- name: Delete zshrc File
-  become: false
-  file:
-    state: absent
-    path: "{{ home_path }}/.zshrc"
-- name: Create zshrc File
-  become: false
-  get_url:
-    url: https://raw.githubusercontent.com/Prometeo/dotfiles/master/zshrc
-    dest: "{{ home_path }}/.zshrc"
-- name: Edit tmux conf
-  become: false
-  lineinfile:
-    line: source "/usr/share/tmux/powerline.conf"
-    dest: "{{ home_path }}/.tmux"
-    create: yes
+# - name: Delete zshrc File
+#   become: false
+#   file:
+#     state: absent
+#     path: "{{ home_path }}/.zshrc"
+# - name: Create zshrc File
+#   become: false
+#   get_url:
+#     url: https://raw.githubusercontent.com/Prometeo/dotfiles/master/zshrc
+#     dest: "{{ home_path }}/.zshrc"
+# - name: Edit tmux conf
+#   become: false
+#   lineinfile:
+#     line: source "/usr/share/tmux/powerline.conf"
+#     dest: "{{ home_path }}/.tmux"
+#     create: yes
 
 - name: Configure dotfiles
   become: false
