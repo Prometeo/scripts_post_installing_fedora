@@ -13,4 +13,5 @@
       - fedora-workstation-repositories
       - steam
       - util-linux-user
+      - the_silver_searcher
     state: present
