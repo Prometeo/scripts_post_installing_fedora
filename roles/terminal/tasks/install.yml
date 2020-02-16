@@ -12,3 +12,8 @@
       - powerline
       - powerline-fonts
       - tmux-powerline
+
+- name: Installing neofetch
+  dnf:
+    pkg:
+      - neofetch
