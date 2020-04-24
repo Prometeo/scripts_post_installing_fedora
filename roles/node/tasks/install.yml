@@ -3,3 +3,8 @@
     pkg:
       - nodejs
     state: present
+
+- name: Install js-bautify
+  npm:
+    name: js-beautify
+    global: yes
